@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15sp"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="322dp"
+        android:layout_height="132dp"
+        android:paddingTop="20sp"
+        app:srcCompat="@drawable/personality_and_age_1920x1080">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGE CALCULATOR"
+        android:padding="10sp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:layout_marginTop="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Select Your Birthday Date"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:backgroundTint="#D6CD80" />
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"/>
+    <TextView
+        android:id="@+id/calculatedAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"/>
+
+
+</LinearLayout>
