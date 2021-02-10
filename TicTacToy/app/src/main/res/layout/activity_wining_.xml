@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wining_Activity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/winingbackground"></ImageView>
+
+    <TextView
+        android:id="@+id/WinnerText"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="#00ADFF"
+        android:textStyle="italic|bold"
+        android:fontFamily="sans-serif-smallcaps"></TextView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_marginTop="550dp"
+        android:gravity="center"
+        android:text="Play Again!"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="italic|bold"
+        android:clickable="true"
+        android:onClick="BtnStart"/>
+    <TextView
+        android:id="@+id/Quit"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_marginTop="650dp"
+        android:gravity="center"
+        android:text="Quit"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="italic|bold"
+        android:clickable="true"
+        android:onClick="BtnExit"/>
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MultiplayerNameActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+
+        android:layout_marginTop="236dp"
+        android:text="Player 1 Name :-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PlayerName1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Player Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Player 2 Name :-"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/PlayerName1" />
+
+    <EditText
+        android:id="@+id/PlayerName2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Player Name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/playBtn"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:onClick="playBtn"
+        android:text="Play"
+        android:textStyle="italic"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:background="@color/purple_200"
+        android:paddingLeft="25sp"
+        android:paddingRight="25sp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PlayerName2"
+        app:layout_constraintStart_toStartOf="@+id/PlayerName2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

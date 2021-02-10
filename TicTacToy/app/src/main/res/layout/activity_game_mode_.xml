@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D48A"
+    tools:context=".GameMode_Activity">
+
+    <Button
+        android:id="@+id/BtnSinglePlayer"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="276dp"
+        android:background="#C12828"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:text="Single Player"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="BtnModePlayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnMultiplayer"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:background="#B62B2B"
+        android:text="MultiPlayer"
+        android:onClick="BtnModePlayer"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/BtnSinglePlayer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/BtnSinglePlayer"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSinglePlayer"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
