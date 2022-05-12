@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+			app:startDestination="@id/titleFragment3" android:label="Quiz App">
+	<fragment android:id="@+id/titleFragment3" android:name="com.example.simplequizapp.TitleFragment"
+			  android:label="Quiz App"
+	tools:layout="@layout/fragment_title">
+		<action android:id="@+id/action_titleFragment3_to_gameFragment" app:destination="@id/gameFragment"/>
+		<action android:id="@+id/action_titleFragment3_to_gameFragment2" app:destination="@id/gameFragment"
+				app:popUpTo="@id/titleFragment3" app:enterAnim="@anim/slide_out_right"
+				app:exitAnim="@anim/slide_in_right" app:popEnterAnim="@anim/slide_in_left"
+				app:popExitAnim="@anim/slide_out_left"/>
+	</fragment>
+	<fragment android:id="@+id/gameFragment" android:name="com.example.simplequizapp.GameFragment"
+	tools:layout="@layout/fragment_game_">
+		<action android:id="@+id/action_gameFragment_to_gameWonFragment" app:destination="@id/gameWonFragment"
+				app:popUpTo="@id/titleFragment3"
+				app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/slide_in_left"
+				app:popExitAnim="@anim/slide_out_left"/>
+		<action android:id="@+id/action_gameFragment_to_gameLostFragment" app:destination="@id/gameLostFragment"
+				app:popUpTo="@id/titleFragment3"
+				app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/slide_in_left"
+				app:popExitAnim="@anim/slide_out_left"/>
+	</fragment>
+	<fragment android:id="@+id/gameWonFragment"
+			  tools:layout="@layout/fragment_game_won">
+			  android:name="com.example.simplequizapp.GameWonFragment"
+			  android:label="Game Won">
+		<action android:id="@+id/action_gameWonFragment_to_gameFragment" app:destination="@id/gameFragment"
+				app:popUpTo="@id/titleFragment3"
+				app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_right"
+				app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_left"/>
+		<argument android:name="numQuestions" app:argType="integer"/>
+		<argument android:name="numCorrect" app:argType="integer"/>
+	</fragment>
+	<fragment android:id="@+id/gameLostFragment"
+			  tools:layout="@layout/fragment_game_lost"
+			  android:name="com.example.simplequizapp.GameLostFragment"
+			  android:label="Game Lost">
+		<action android:id="@+id/action_gameLostFragment_to_gameFragment" app:destination="@id/gameFragment"
+				app:popUpTo="@id/titleFragment3"
+				app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_right"
+				app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_left"/>
+	</fragment>
+	<fragment android:id="@+id/aboutFragment"
+			  tools:layout="@layout/fragment_about"
+			  android:name="com.example.simplequizapp.AboutFragment"
+			  android:label="About Quiz"/>
+	<fragment android:id="@+id/rulesFragment"
+			  tools:layout="@layout/fragment_rules"
+			  android:name="com.example.simplequizapp.RulesFragment"
+			  android:label="RulesFragment"/>
+</navigation>

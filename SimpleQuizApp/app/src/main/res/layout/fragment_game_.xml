@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto">
+	<data>
+		<variable
+				name="game"
+				type="com.example.simplequizapp.GameFragment">
+		</variable>
+	</data>
+<ScrollView
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:background="@color/white"
+			 tools:context=".GameFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<ImageView
+			android:layout_width="0dp"
+			android:layout_height="250dp"
+			app:srcCompat="@drawable/android_category_simple"
+			app:layout_constraintTop_toTopOf="parent"
+			android:layout_margin="15dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:id="@+id/imageView"/>
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@{game.currentQuestion.question}"
+			tools:text="Here The Question Is To Be Displayer"
+			app:layout_constraintTop_toBottomOf="@+id/imageView"
+			app:layout_constraintStart_toStartOf="@+id/imageView"
+			app:layout_constraintEnd_toEndOf="@+id/imageView"
+			style="@style/Text_Style"
+			android:id="@+id/questionText"/>
+	<RadioGroup
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintStart_toStartOf="@+id/questionText"
+			app:layout_constraintEnd_toEndOf="@+id/questionText"
+			app:layout_constraintTop_toBottomOf="@+id/questionText"
+			android:id="@+id/radioGroup">
+		<RadioButton
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:checked="true"
+				android:text="@{game.currentOptions[0]}"
+				android:id="@+id/RadioButtonOne"
+				tools:text="Option 1"
+				style="@style/Text_Style"/>
+		<RadioButton
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/RadioButtonTwo"
+				android:text="@{game.currentOptions[1]}"
+				tools:text="Option 2"
+				style="@style/Text_Style"/>
+		<RadioButton
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/RadioButtonThree"
+				tools:text="Option 3"
+				android:text="@{game.currentOptions[2]}"
+				style="@style/Text_Style"/>
+		<RadioButton
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/RadioButtonFour"
+				tools:text="Option 4"
+				android:text="@{game.currentOptions[3]}"
+				style="@style/Text_Style"/>
+	</RadioGroup>
+	<Button
+			android:layout_width="250dp"
+			android:layout_height="150dp"
+			android:text="@string/submit"
+			style="@style/Text_Style"
+			android:textColor="@color/white"
+			android:background="@drawable/android"
+			android:textAlignment="center"
+			android:id="@+id/submitButton"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/radioGroup"
+			app:layout_constraintTop_toBottomOf="@+id/radioGroup"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</layout>

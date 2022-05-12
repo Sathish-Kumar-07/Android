@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools">
+	<data >
+		<variable
+				name="myExerciseData"
+				type="com.example.a7minuteworkoutapp.ExerciseModel"
+		/>
+	</data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".WorkOutFragment">
+	<ImageView android:layout_width="match_parent"
+			   android:layout_height="0dp"
+			   app:layout_constraintEnd_toEndOf="parent"
+			   app:layout_constraintStart_toStartOf="parent"
+			   android:id="@+id/exerciseImageView"
+			   android:visibility="gone"
+			   app:layout_constraintTop_toTopOf="parent"
+			   app:layout_constraintHorizontal_bias="0.5"
+			   app:layout_constraintBottom_toTopOf="@+id/progressContentLayout"/>
+	<LinearLayout
+			android:id="@+id/progressContentLayout"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:gravity="center"
+			android:orientation="vertical"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/exerciseImageView"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintBottom_toTopOf="@+id/itemsIconRecyclerView">
+		<TextView
+				android:id="@+id/exerciseTitleTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/get_ready"
+				android:textColor="@color/teal_700"
+				android:textSize="20sp"
+				style="@style/textViewStyle"/>
+		<FrameLayout
+				android:id="@+id/progressView"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:background="@drawable/item_circle_background"
+				android:clickable="true"
+				android:focusable="true">
+			<ProgressBar
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:rotation="-90"
+					android:progress="0"
+					android:id="@+id/progressBar"
+					style="?android:attr/progressBarStyleHorizontal"
+					android:progressDrawable="@drawable/circle_progress"
+					android:background="@drawable/circular_progress_bar"
+					android:max="60"/>
+			<TextView
+					android:id="@+id/progressCount"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="@string/go"
+					android:textColor="@color/black"
+					android:textSize="25sp"
+					android:gravity="center"
+			/>
+		</FrameLayout>
+		<TextView
+				android:id="@+id/upcomingTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/upcoming_exercise"
+				android:textAllCaps="true"
+				android:visibility="gone"
+				android:textSize="15sp"
+				style="@style/textViewStyle"
+		/>
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/textViewStyle"
+				android:textColor="@color/purple_500"
+				android:text="@{myExerciseData.name,default = No_Name}"
+				android:textSize="20sp"
+		/>
+	</LinearLayout>
+
+<!--	<LinearLayout-->
+<!--			android:id="@+id/exceriseNumberTabLayout"-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="40dp"-->
+<!--			app:layout_constraintBottom_toBottomOf="parent"-->
+<!--			app:layout_constraintStart_toStartOf="parent"-->
+<!--			app:layout_constraintEnd_toEndOf="parent"-->
+<!--			android:visibility="gone"-->
+<!--			android:gravity="center|center_horizontal"-->
+<!--			android:orientation="horizontal">-->
+<!--		<TextView-->
+<!--				android:id="@+id/exerciseNo1"-->
+<!--				android:layout_width="30dp"-->
+<!--				   android:layout_height="30dp"-->
+<!--				  android:text="1"-->
+<!--				  android:gravity="center"-->
+<!--		android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo2"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="2"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo3"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="3"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo4"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="4"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo5"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="5"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo6"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="6"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo7"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="7"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo8"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="8"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo9"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="9"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--		<TextView android:id="@+id/exerciseNo10"-->
+<!--				  android:layout_width="30dp"-->
+<!--				  android:layout_height="30dp"-->
+<!--				  android:text="10"-->
+<!--				  android:gravity="center"-->
+<!--				  android:background="@drawable/circular_progress_bar"/>-->
+<!--	</LinearLayout>-->
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/itemsIconRecyclerView"
+			android:visibility="gone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

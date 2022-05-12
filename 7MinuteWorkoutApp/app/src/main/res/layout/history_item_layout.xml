@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+			  android:id="@+id/historyItemLayout"
+			  android:layout_width="match_parent"
+			  android:padding="10dp"
+			  android:weightSum="5"
+			  android:background="@drawable/history_item_background_1"
+			  android:layout_height="wrap_content">
+	<TextView
+			android:id="@+id/slnoTextView"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			style="@style/textViewStyle"
+			android:textSize="20sp"
+			android:textAlignment="center"
+			android:layout_height="wrap_content"
+			tools:text="10"
+	/>
+	<TextView
+			android:id="@+id/dateTimeTextView"
+			android:layout_width="0dp"
+			android:layout_weight="4"
+			style="@style/textViewStyle"
+			android:textSize="20sp"
+			android:textAlignment="center"
+			android:layout_height="wrap_content"
+			tools:text="2021-09-29 : 23:55:65"
+	/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+<LinearLayout
+
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+		android:background="@color/teal_200"
+		android:paddingTop="@dimen/margin"
+		android:layout_gravity="center"
+		tools:context=".MainActivity">
+	<TextView
+			android:text="@string/calculate_your"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/purple_700"
+			android:id="@+id/textView"
+			style="@style/textStyle"/>
+	<TextView
+			android:text="@string/age"
+			style="@style/textStyle"
+			android:layout_width="match_parent"
+			android:textColor="@color/teal_700"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView2" />
+	<TextView
+			android:text="@string/in_minutes"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/textStyle"
+			android:id="@+id/textView3" />
+	<Button
+			android:text="@string/select_date"
+			app:backgroundTint="@color/white"
+			android:textColor="@color/teal_700"
+			android:textSize="20sp"
+			android:layout_marginTop="16dp"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btn_Date"/>
+	<TextView
+			android:hint="@string/selected_date"
+			android:layout_width="match_parent"
+			style="@style/textStyle"
+			android:layout_marginTop="16dp"
+			android:textColor="@color/purple_700"
+			android:layout_height="wrap_content"
+			android:id="@+id/selectedDateTextView"/>
+	<TextView
+			android:hint="@string/age_in_minutes"
+			style="@style/textStyle"
+			android:layout_marginTop="16dp"
+			android:textColor="@color/purple_700"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/ageInMinutesTextView"/>
+	</LinearLayout>
+</layout>

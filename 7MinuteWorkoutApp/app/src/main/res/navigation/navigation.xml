@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+			app:startDestination="@id/titleFragment">
+
+	<fragment android:id="@+id/titleFragment" android:name="com.example.a7minuteworkoutapp.TitleFragment"
+			  android:label="7 Minute App" tools:layout="@layout/fragment_title">
+		<action android:id="@+id/action_titleFragment_to_workOutFragment" app:destination="@id/workOutFragment"
+				app:popUpTo="@id/titleFragment"/>
+		<action android:id="@+id/action_titleFragment_to_BMICalculatorFragment"
+				app:destination="@id/BMICalculatorFragment" app:popUpTo="@id/titleFragment"/>
+		<action android:id="@+id/action_titleFragment_to_historyFragment" app:destination="@id/historyFragment"
+				app:popUpTo="@id/titleFragment"/>
+	</fragment>
+	<fragment android:id="@+id/workOutFragment" android:name="com.example.a7minuteworkoutapp.WorkOutFragment"
+			  android:label="Exercise Up!" tools:layout="@layout/fragment_work_out">
+		<action android:id="@+id/action_workOutFragment_to_exerciseCompleteFragment"
+				app:destination="@id/exerciseCompleteFragment" app:popUpTo="@id/titleFragment"/>
+	</fragment>
+	<fragment android:id="@+id/exerciseCompleteFragment"
+			  android:name="com.example.a7minuteworkoutapp.ExerciseCompleteFragment"
+			  android:label="You Did It!" tools:layout="@layout/fragment_exercise_complete">
+		<action android:id="@+id/action_exerciseCompleteFragment_to_titleFragment" app:destination="@id/titleFragment"
+				app:popUpTo="@id/titleFragment"/>
+	</fragment>
+	<fragment android:id="@+id/BMICalculatorFragment"
+			  android:name="com.example.a7minuteworkoutapp.BMICalculatorFragment"
+			  android:label="BMI Calculator" tools:layout="@layout/fragment_b_m_i_calculator"/>
+	<fragment android:id="@+id/historyFragment" android:name="com.example.a7minuteworkoutapp.HistoryFragment"
+			  android:label="Exercise History" tools:layout="@layout/fragment_history"/>
+</navigation>

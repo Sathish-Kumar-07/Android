@@ -1,0 +1,12 @@
+<resources>
+	<string name="app_name">7 Minute Workout App</string>
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="go">Go</string>
+	<string name="get_ready">GET READY</string>
+	<string name="upcoming_exercise">Upcoming Exercise</string>
+	<string name="are_you_sure">Are You Sure ?</string>
+	<string name="info_dialog_text">This will stop your workout.\nYou\'ve come so far, \nare you sure you want to
+		quit?
+	</string>
+</resources>

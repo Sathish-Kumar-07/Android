@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="AldrichFontAppearance">
+		<item name="fontFamily">@font/aldrich</item>
+	</style>
+	<style name="textViewStyle">
+		<item name="android:textStyle">bold|italic</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:fontFamily">@font/aldrich</item>
+	</style>
+</resources>

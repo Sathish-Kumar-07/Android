@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:padding="5dp"
+		android:layout_height="wrap_content">
+	<TextView
+			android:id="@+id/headTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/are_you_sure"
+			android:layout_margin="5dp"
+			android:textSize="25sp"
+			android:textColor="@color/black"
+			style="@style/textViewStyle"
+			/>
+	<TextView
+			android:id="@+id/infoDialog"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/info_dialog_text"
+			android:textColor="@color/black"
+			android:layout_margin="5dp"
+			/>
+	<LinearLayout
+			android:layout_margin="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="2"
+			>
+		<Button
+				android:id="@+id/yesButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="Yes"
+				android:layout_weight="1"
+				android:fontFamily="@font/aldrich"
+				android:background="@color/teal_200"
+				android:layout_marginRight="5dp"
+				android:layout_marginLeft="5dp"
+				android:textColor="@color/white"
+				android:textSize="20sp"
+		/>
+		<Button
+				android:id="@+id/noButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="No"
+				android:layout_weight="1"
+				style="@style/textViewStyle"
+				android:background="@color/teal_200"
+				android:textColor="@color/white"
+				android:textSize="20sp"
+				android:fontFamily="@font/aldrich"
+				android:layout_marginRight="5dp"
+				android:layout_marginLeft="5dp"
+		/>
+	</LinearLayout>
+
+</LinearLayout>

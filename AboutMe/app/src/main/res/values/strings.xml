@@ -1,0 +1,28 @@
+<resources>
+	<string name="app_name">About Me</string>
+	<string name="name">Sathish Kumar</string>
+	<string name="yellow_Star">Yellow Star</string>
+	<string name="bio">What is lorem ipsum lorem\'s ipsum is simply dummy text of the printing and typesetting industry \n\nlorem ipsum has been the industrys standard dummy text ever<br/>
+		since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?\n\n
+		Lorem Ipsum has been the industry standard dummy text ever since the 1500s,\n\n
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\n
+		It has survived not only five centuries, but also the leap into electronic typesetting,\n\n
+		remaining essentially unchanged.\n\nWhat is lorem ipsum lorem ipsum is simply dummy text of the printing and typesetting industry \n\nlorem ipsum has been the industry standard dummy text ever<br/>
+		since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?\n\n
+		Lorem Ipsum has been the industry standard dummy text ever since the 1500s,\n\n
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\n
+		It has survived not only five centuries, but also the leap into electronic typesetting,\n\n
+		remaining essentially unchanged.\n\nWhat is lorem ipsum lorem ipsum is simply dummy text of the printing and typesetting industry \n\nlorem ipsum has been the industry standard dummy text ever<br/>
+		since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?\n\n
+		Lorem Ipsum has been the industry standard dummy text ever since the 1500s,\n\n
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\n
+		It has survived not only five centuries, but also the leap into electronic typesetting,\n\n
+		remaining essentially unchanged.\n\nWhat is lorem ipsum lorem ipsum is simply dummy text of the printing and typesetting industry \n\nlorem ipsum has been the industry standard dummy text ever<br/>
+		since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?\n\n
+		Lorem Ipsum has been the industry standard dummy text ever since the 1500s,\n\n
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\n
+		It has survived not only five centuries, but also the leap into electronic typesetting,\n\n
+		remaining essentially unchanged.<br/></string>
+	<string name="what_is_your_nickname">What Is Your Nick Name ?</string>
+	<string name="done">Done</string>
+</resources>
